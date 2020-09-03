@@ -1,0 +1,16 @@
+
+<div class="container mt-5">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-4 rounded p-3">
+        <div class="card" style="width: 18rem;">
+          <%= image_tag "cocktail.jpg", alt: "cocktail", class: "card-img-top" %>
+          <!-- <img class="card-img-top" src="https://source.unsplash.com/random/?cocktail" width='210' alt="Card image cap"> -->
+          <div class="card-body">
+            <p class="card-text"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

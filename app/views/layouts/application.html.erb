@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light border">
+      <%= link_to 'The Bar', cocktails_path(@cocktail), class: "navbar-brand" %>
+      <%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+    </nav>
     <%= yield %>
   </body>
 </html>
