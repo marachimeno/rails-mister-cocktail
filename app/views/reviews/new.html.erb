@@ -1,0 +1,6 @@
+<div class="m-5">
+  <%= simple_form_for [@cocktail, @review] do |f| %>
+    <%= f.input :content %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
