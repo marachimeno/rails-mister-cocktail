@@ -15,15 +15,15 @@ results['drinks'].each do |ingredient|
     )
   end
 end
+puts 'Ingredients created!'
+# cockails_url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail'
+# doc2 = open(cockails_url).read
+# results2 = JSON.parse(doc2)
 
-cockails_url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail'
-doc2 = open(cockails_url).read
-results2 = JSON.parse(doc2)
-
-results2['drinks'].each do |name|
-  10.times do
-    name = Cocktail.create(
-      name: name['strDrink']
-    )
-  end
-end
+# results2['drinks'].each do |name|
+#   10.times do
+#     name = Cocktail.create(
+#       name: name['strDrink']
+#     )
+#   end
+# end
