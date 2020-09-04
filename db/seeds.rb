@@ -2,7 +2,9 @@ require 'open-uri'
 
 puts 'Cleaning database...'
 Ingredient.destroy_all
+Dose.destroy_all
 Cocktail.destroy_all
+Review.destroy_all
 
 ingredients_url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 doc = open(ingredients_url).read
